@@ -1,0 +1,8 @@
+#exportPattern("^[[:alpha:]]+")
+export(
+  CalculateAssociationsTable
+)
+
+ importFrom("stats", "binomial", "glm")
+ importFrom("stats", "runif")
+

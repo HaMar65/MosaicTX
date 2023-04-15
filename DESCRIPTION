@@ -1,0 +1,14 @@
+Package: MosaicTX
+Type: Package
+Title: Estimate the associations between the mutations and CRISPR KO outcomes
+Version: 1.0.0
+Depends: R (>= 3.0)
+Author: Hamed Haseli Mashhadi <hamedhaseli@gmail.com>
+Maintainer: Hamed Haseli Mashhadi <hamedhaseli@gmail.com>
+Description: This is an R package to estimate the associations between the mutations and CRISPR KO outcomes for the MosaicTX technical test.
+License: LGPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
