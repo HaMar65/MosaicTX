@@ -28,7 +28,7 @@ unittest = function(iteration = 1000,
 
   # Run the function under 100 different scenarios
   # There must  be less than 5% change of making any error
-  for (i in 1:1000) {
+  for (i in 1:iteration) {
     message('Test ', i, ' from ', iteration)
     # Create random mutation data with 20 genes and 10 cell lines
     mutations = as.data.frame(matrix(sample(
