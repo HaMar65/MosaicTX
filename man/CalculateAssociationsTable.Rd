@@ -12,7 +12,6 @@ CalculateAssociationsTable(mutations = NULL,
 geneko = NULL, significanceLevel = 0.95,
 KeyColName = "Model", seed = 123456)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{mutations}{
   A data frame of form NxM where rows and columns represent the gene mutations and cell lines respectively. See the examples for an instance of this data.
@@ -62,6 +61,7 @@ head(mutations, 5)
 head(geneko, 5)
 
 # Run the driver function to find the associations between mutations and the CRISPR KOs
-MosaicTX::CalculateAssociationsTable(mutations = mutations, geneko = geneko)
+result = MosaicTX::CalculateAssociationsTable(mutations = mutations, geneko = geneko)
+print(result)
 
 }
