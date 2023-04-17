@@ -1,4 +1,4 @@
-FROM rocker/r-ver:4.2
+FROM rocker/r-ver:3.6.0
 
 # ARG WHEN
 WORKDIR /TechnicalTest
