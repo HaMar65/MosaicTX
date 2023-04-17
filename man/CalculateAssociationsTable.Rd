@@ -61,7 +61,6 @@ head(mutations, 5)
 head(geneko, 5)
 
 # Run the driver function to find the associations between mutations and the CRISPR KOs
-result = MosaicTX::CalculateAssociationsTable(mutations = mutations, geneko = geneko)
-print(result)
+MosaicTX::CalculateAssociationsTable(mutations = mutations, geneko = geneko)
 
 }
