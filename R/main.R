@@ -94,10 +94,10 @@ CalculateAssociationsTable = function(mutations = NULL,
   for (i in 1:ncol(Y)) {
     message('\t--> Processing ', names(Y)[i])
 
-    data = cbind(Y = as.numeric(Y[, i]), X)
+    data = cbind(Y = Y[, i], X)
     # Apply logistic model
     suppressWarnings({
-      logiR =  glm(Y ~ ., family = binomial(link = "logit"), data = data)
+      logiR =  glm(as.factor(Y) ~ ., family = binomial(link = "logit"), data = data)
     })
 
     # Store the results
